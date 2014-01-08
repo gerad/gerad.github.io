@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <style>
+      html {
+        background-image: none;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+      }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.10.1.js"></script>
+    <script>
+      (function() {
+        function flickr(options) {
+          var url = "http://api.flickr.com/services/rest/?jsoncallback=?";
+
+          options.api_key = '1ae575a3c033d83f8b0468316a4d2421';
+          options.format = 'json';
+
+          return $.getJSON(url, options);
+        }
+
+        function flickrPhotos(group_id, options) {
+          options.method = 'flickr.groups.pools.getPhotos';
+          options.group_id = group_id;
+          return flickr(options);
+        }
+
+        function flickrPhotoSizes(photo_id) {
+          return flickr({
+            method: 'flickr.photos.getSizes',
+            photo_id: photo_id,
+          });
+        }
+
+        function getRandomPhoto(group_id) {
+          flickrPhotos(group_id, { per_page: 1 }).done(function(data, xhr) {
+            console.log(data);
+            var random = Math.floor(Math.random() * data.photos.pages);
+            getPhoto(group_id, random);
+          });
+        }
+
+        function getPhoto(group_id, photo_num) {
+          console.log(photo_num);
+          flickrPhotos(group_id, { per_page: 1, page: photo_num }).done(function(data, xhr) {
+            console.log(data);
+            var photos = data.photos;
+            getPhotoSizes(photos.photo[0].id);
+          });
+        }
+
+        function getPhotoSizes(photo_id) {
+          flickrPhotoSizes(photo_id).done(function(data, xhr) {
+            var sizes = data.sizes.size;
+            var currentImage = -1;
+
+            for (var i = 0, l = sizes.length; i < l; i++) {
+              (function(i) {
+                $('<img/>').on('load', function() {
+                  if (currentImage < i) {
+                    currentImage = i;
+                    setBackground(this.src);
+                  }
+                })[0].src = sizes[i].source;
+              })(i);
+            }
+          });
+        }
+
+        function setBackground(image) {
+          $('html').css('backgroundImage', 'url(' + image + ')');
+        }
+
+        var group_id = '1798253@N21'; // best of 2013
+        getRandomPhoto(group_id);
+
+      }).call();
+
+    </script>
+  </head
+</html>
