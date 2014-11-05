@@ -56,6 +56,8 @@
   <h2>Employment</h2>
   <div class="row" ng-repeat="job in jobs">
     <div id="{{job.id}}" class="job col-md-12">
+
+      <!-- job header -->
       <div class="row job-header">
         <div class="col-xs-8">
           <h3>
@@ -68,9 +70,23 @@
           <div class="duration text-muted" ng-if="job.duration">({{job.duration}})</div>
         </div>
       </div>
+
+      <!-- job details -->
       <div class="row job-details">
         <div class="col-xs-12">
           <p class="summary">{{job.summary}}</p>
+        </div>
+      </div>
+
+      <!-- job projects -->
+      <div class="row job-projects" ng-repeat="group in job.projects | inGroupsOf:3">
+        <div class="col-sm-4 job-project" ng-repeat="project in group">
+          <h4>{{project.name}}</h4>
+          <p>{{project.summary}}</p>
+          <div class="skills">
+            <span class="skill" ng-repeat="skill in project.skills">{{skill}}
+            </span>
+          </div>
         </div>
       </div>
     </div>

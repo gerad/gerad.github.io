@@ -3,7 +3,7 @@
   "pronounciation": "j'air-red cider-how'd",
   "pronounciation_url": "/gerad-pronounced.m4a", 
   "title": "Product | Development | Data",
-  "objective": "I’m passionate about creating delightful software that improves people’s day-to-day lives.",
+  "objective": "I’m passionate about creating delightful software that improves people’s daily lives.",
   "summary": "I am at my best when working with highly-engaged teams to solve real problems.",
   "email": "gerad@suyderhoud.com",
   "website": "gerad.suyderhoud.com",
@@ -19,21 +19,21 @@
       "company": "Suyderhoud LLC",
       "title": "Owner",
       "dates": "Ongoing",
-      "summary": "I often have side projects where I dabble with new technology or product ideas. Here are some of my favorites.",
-      "projects": [] },
+      "summary": "I have many side-projects where I dabble with new technology or product ideas. Here are some of my favorites.",
+      "projects": ["resume", "caddyhack", "golfcourseswiki", "tractor", "gifster", "distractless", "monitaur", "lazeroids", "gentrifire"] },
     { "id": "sequoia",
       "company": "Sequoia Capital",
       "title": "(co)Labs Entrepreneur",
       "dates": "Jun 2013 – Oct 2014",
       "duration": "1 year 5 months",
-      "summary": "I was honored to be part of Sequoia’s (co)Labs Entrepreneur fellowship.",
-      "projects": ["forwardtrail"] },
+      "summary": "I was honored to be one of the founding class of Sequoia’s “(co)Labs Entrepreneur” fellowship.",
+      "projects": ["forwardtrail", "grove", "grove-public"] },
     { "id": "nko",
       "company": "Node.js Knockout",
       "title": "Creator",
       "dates": "May 2010 – Present",
       "duration": "4 years 7 months",
-      "summary": "I created and lead a 48-hour hackathon for developers to build apps using node.js. Over 1000 participate from around the world." },
+      "summary": "I created and run a 48-hour hackathon for developers to build apps using node.js. Over 1000 participate from around the world." },
     { "id": "fortnight",
       "company": "Fortnight Labs",
       "title": "Founder",
@@ -59,17 +59,160 @@
         "duration": "1 year 7 months",
         "summary": "I performed economic analyses in a variety of industries and practice areas." }
   ],
-  "projects": [
-    { "id": "forwardtrail",
+  "projects": {
+    "resume": {
+      "name": "Résumé",
+      "summary": "You’re looking at it.",
+      "skills": [
+        "angular",
+        "jquery",
+        "javascript",
+        "bootstrap",
+        "git"
+      ]},
+    "caddyhack": {
+      "name": "Caddyhack",
+      "summary": "Strava for golf. Social golf tracking for the Apple watch.",
+      "skills": [
+        "ios development",
+        "objective c"
+      ]
+    },
+    "golfcourseswiki": {
+      "name": "Golf Courses Wiki",
+      "summary": "An open golf course database. Used as a data source for Caddyhack.",
+      "skills": [
+        "angular",
+        "node",
+        "express",
+        "mongodb",
+        "jquery",
+        "javascript",
+        "bootstrap",
+        "git"
+      ]},
+    "tractor": {
+      "name": "Tractor",
+      "summary": "Painless time tracking in your menubar.",
+      "skills": [
+        "objective c",
+        "mac development",
+        "sqlite",
+        "core data"
+      ]},
+    "gifster": {
+      "name": "Gifster",
+      "summary": "Screencast into an animated gif. Great for bug reports.",
+      "skills": [
+        "objective c",
+        "mac development"
+      ]},
+    "distractless": {
+      "name": "Distractless",
+      "summary": "A chrome extension to eliminate internet distractions.",
+      "skills": [
+        "chrome extension",
+        "javascript"
+      ]},
+    "monitaur": {
+      "name": "Monitaur",
+      "summary": "Instant server monitoring. Like Google analytics for  server disk space.",
+      "skills": [
+        "rails",
+        "node",
+        "awk",
+        "sed",
+        "jquery",
+        "javascript"
+      ]},
+    "lazeroids": {
+      "name": "Lazeroids",
+      "summary": "Real-time massively multiplayer asteroids on the web. Before people did that. Rails Rumble “Most Innovative” award winner.",
+      "skills": [
+        "rails",
+        "python",
+        "javascript",
+        "coffeescript"
+      ]},
+    "gentrifire": {
+      "name": "Gentrifire",
+      "summary": "A tongue-in-cheek approach to finding your next apartment.",
+      "skills": [
+        "R",
+        "linear regression",
+        "google maps",
+        "rails",
+        "javascript",
+        "jquery"
+      ]
+    },
+    "forwardtrail": {
       "name": "ForwardTrail",
-      "summary": "Sequoia's CRM system commercialized." },
-    { "id": "grove",
+      "summary": "Rebuilt Sequoia’s custom CRM system into a commercial product.",
+      "skills": [
+        "rails",
+        "postgres",
+        "elasticsearch",
+        "beanstalkd",
+        "chef",
+        "devops",
+        "ember",
+        "jquery",
+        "javascript",
+        "coffeescript",
+        "bootstrap",
+        "haml",
+        "sass",
+        "postfix",
+        "scrum",
+        "trello",
+        "git",
+        "ubuntu",
+        "nginx",
+        "unicorn",
+        "god",
+        "chrome extension"
+      ]},
+    "grove": {
       "name": "Grove",
-      "summary": "A private community for Sequoia founders."},
-    { "id": "grove-public",
+      "summary": "A private community for Sequoia founders.",
+      "skills": [
+        "rails",
+        "mongodb",
+        "boostrap",
+        "backbone",
+        "jquery",
+        "javascript",
+        "coffeescript",
+        "haml",
+        "sass",
+        "kanban",
+        "trello",
+        "git",
+        "ubuntu",
+        "apache",
+        "passenger"
+      ]},
+    "grove-public": {
       "name": "Grove Public",
-      "summary": "Public Sequoia insights for entrepreneurs."}
-  ],
+      "summary": "Publicly published Sequoia insights for entrepreneurs.",
+      "skills": [
+        "rails",
+        "mongodb",
+        "boostrap",
+        "backbone",
+        "jquery",
+        "javascript",
+        "coffeescript",
+        "haml",
+        "sass",
+        "kanban",
+        "trello",
+        "git",
+        "apache",
+        "passenger"
+      ]}
+  },
   "hobbies": [
     { "id": "dad",
       "name": "Fatherhood",

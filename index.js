@@ -4,7 +4,8 @@ var app = angular.module('gsResume', []);
 
 app.controller("ResumeCtrl", function($scope, $element, $http) {
   $http.get('/index.json').success(function(json) {
-    angular.extend($scope, json);
+    var resume = deserialize(json);
+    angular.extend($scope, resume);
   });
 
   $scope.pronounce = function() {
@@ -69,8 +70,6 @@ Transmorpher.prototype.onScroll = function() {
   var headingTop = this.heading.h1.top - scrollTop;
   var headerTop = this.header.h1.top;
 
-  console.log(headingTop, headerTop);
-
   var headerHidden, headerShowing, headerShown, h1FontSize, imgHeight;
 
   if (headingTop >= headerTop) {
@@ -98,6 +97,7 @@ Transmorpher.prototype.onScroll = function() {
       headerShown = true;
     } else {
       // we're in transition
+      console.log(headingTop, headerTop);
       headerShowing = true;
     }
   }
@@ -135,6 +135,41 @@ app.directive('headerTransmorpher', function() {
     });
   };
 });
+
+app.filter('inGroupsOf', function() {
+  return function(input, count) {
+    if (!angular.isArray(input)) { return input; }
+
+    // HACK http://stackoverflow.com/questions/20963462/rootscopeinfdig-error-caused-by-filter
+    if (input.groups) { return input.groups; }
+    var groups = input.groups = [];
+
+    var j = 0;
+    for (var i = 0, l = input.length; i < l; ++i) {
+      if (!groups[j]) { groups[j] = []; }
+      groups[j].push(input[i]);
+      if (groups[j].length >= count) { j++; }
+    }
+
+    return groups;
+  };
+});
+
+
+function deserialize(json) {
+  // convert project names to project objects
+  for (var i = 0, il = json.jobs.length; i < il; ++i) {
+    var job = json.jobs[i];
+
+    if (!job.projects) { job.projects = []; }
+    for (var j = 0, jl = job.projects.length; j < jl; ++j) {
+      var projectName = job.projects[j];
+      job.projects[j] = json.projects[projectName];
+    }
+  }
+
+  return json;
+}
 
 })();
 

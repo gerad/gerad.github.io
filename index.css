@@ -82,9 +82,8 @@ header .backdrop {
 }
 
 .header-shown header {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0.75);
   border-bottom: 1px solid lightgray;
-  box-shadow: 0 0 2px lightgray;
 }
 
 .header-showing #heading img,
@@ -101,7 +100,7 @@ header .backdrop {
   margin-right: 10px;
   border-radius: 999;
   border: 1px solid lightgray;
-  box-shadow: 0 0 6px gray;
+  box-shadow: 0 0 1px gray;
 }
 
 #heading {
@@ -174,12 +173,16 @@ header .backdrop {
 
 /* employment details */
 
-#employment h2{
+#employment h2 {
+  margin-bottom: 0.75em;
+}
+
+#employment h3 {
   margin-bottom: 0.5em;
 }
 
 #employment .job {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 #employment .title {
@@ -193,7 +196,7 @@ header .backdrop {
 
 #employment .dates,
 #employment .duration {
-  font-size: small;
+  font-size: 12px;
 }
 
 /* end employment details */
