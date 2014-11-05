@@ -15,31 +15,32 @@
       "school": "Stanford" }
   ],
   "jobs": [
-    { "id": "suyderhoud-llc",
-      "company": "Suyderhoud LLC",
-      "title": "Owner",
-      "dates": "Ongoing",
-      "summary": "I have many side-projects where I dabble with new technology or product ideas. Here are some of my favorites.",
-      "projects": ["resume", "caddyhack", "golfcourseswiki", "tractor", "gifster", "distractless", "monitaur", "lazeroids", "gentrifire"] },
-    { "id": "sequoia",
-      "company": "Sequoia Capital",
-      "title": "(co)Labs Entrepreneur",
-      "dates": "Jun 2013 – Oct 2014",
-      "duration": "1 year 5 months",
-      "summary": "I was honored to be one of the founding class of Sequoia’s “(co)Labs Entrepreneur” fellowship.",
-      "projects": ["forwardtrail", "grove", "grove-public"] },
     { "id": "nko",
       "company": "Node.js Knockout",
       "title": "Creator",
       "dates": "May 2010 – Present",
       "duration": "4 years 7 months",
       "summary": "I created and run a 48-hour hackathon for developers to build apps using node.js. Over 1000 participate from around the world." },
+    { "id": "sequoia",
+      "company": "Sequoia Capital",
+      "title": "(co)Labs Entrepreneur",
+      "dates": "Jun 2013 – Oct 2014",
+      "duration": "1 year 5 months",
+      "summary": "I was honored to be one of Sequoia’s founding “(co)Labs Entrepreneurs.”",
+      "projects": ["forwardtrail", "grove", "grove-public"] },
+    { "id": "suyderhoud-llc",
+      "company": "Suyderhoud LLC",
+      "title": "Owner",
+      "dates": "Ongoing",
+      "summary": "I have many side-projects where I dabble with new technology or product ideas. Here are some of my favorites.",
+      "projects": ["caddyhack", "golfcourseswiki", "tractor", "gifster", "distractless", "monitaur", "lazeroids", "gentrifire", "resume"] },
     { "id": "fortnight",
       "company": "Fortnight Labs",
       "title": "Founder",
       "dates": "Mar 2010 – May 2013",
       "duration": "3 years 3 months",
-      "summary": "I founded and ran Fortnight Labs, a web design & development consulting company." },
+      "summary": "I founded and ran Fortnight Labs, a web design & development consulting company.",
+      "projects": ["sms", "rleague", "solarclover", "sentinel", "spotxchange",  "nomic"]},
     { "id": "swivel",
       "company": "Swivel",
       "title": "Product Manager",
@@ -65,152 +66,188 @@
       "summary": "You’re looking at it.",
       "skills": [
         "angular",
-        "jquery",
-        "javascript",
         "bootstrap",
-        "git"
+        "product definition"
       ]},
     "caddyhack": {
       "name": "Caddyhack",
       "summary": "Strava for golf. Social golf tracking for the Apple watch.",
       "skills": [
-        "ios development",
-        "objective c"
+        "objective c",
+        "ios",
+        "product definition"
       ]
     },
     "golfcourseswiki": {
       "name": "Golf Courses Wiki",
       "summary": "An open golf course database. Used as a data source for Caddyhack.",
       "skills": [
-        "angular",
         "node",
-        "express",
         "mongodb",
-        "jquery",
-        "javascript",
+        "angular",
         "bootstrap",
-        "git"
+        "product definition"
       ]},
     "tractor": {
       "name": "Tractor",
-      "summary": "Painless time tracking in your menubar.",
+      "summary": "Automatic time tracking from your menubar.",
       "skills": [
         "objective c",
-        "mac development",
+        "mac",
         "sqlite",
-        "core data"
+        "product definition"
       ]},
     "gifster": {
       "name": "Gifster",
       "summary": "Screencast into an animated gif. Great for bug reports.",
       "skills": [
         "objective c",
-        "mac development"
+        "mac",
+        "product definition"
       ]},
     "distractless": {
       "name": "Distractless",
       "summary": "A chrome extension to eliminate internet distractions.",
       "skills": [
         "chrome extension",
-        "javascript"
+        "product definition"
       ]},
     "monitaur": {
       "name": "Monitaur",
       "summary": "Instant server monitoring. Like Google analytics for  server disk space.",
       "skills": [
         "rails",
+        "mysql",
         "node",
-        "awk",
-        "sed",
         "jquery",
-        "javascript"
+        "product definition",
+        "agile"
       ]},
     "lazeroids": {
       "name": "Lazeroids",
       "summary": "Real-time massively multiplayer asteroids on the web. Before people did that. Rails Rumble “Most Innovative” award winner.",
       "skills": [
         "rails",
+        "node",
         "python",
-        "javascript",
-        "coffeescript"
+        "jquery",
+        "product definition",
+        "agile"
       ]},
     "gentrifire": {
       "name": "Gentrifire",
       "summary": "A tongue-in-cheek approach to finding your next apartment.",
       "skills": [
-        "R",
-        "linear regression",
-        "google maps",
         "rails",
-        "javascript",
-        "jquery"
-      ]
-    },
+        "mysql",
+        "jquery",
+        "R",
+        "product definition",
+        "agile"
+      ]},
     "forwardtrail": {
       "name": "ForwardTrail",
       "summary": "Rebuilt Sequoia’s custom CRM system into a commercial product.",
       "skills": [
         "rails",
         "postgres",
-        "elasticsearch",
-        "beanstalkd",
-        "chef",
-        "devops",
         "ember",
-        "jquery",
-        "javascript",
-        "coffeescript",
         "bootstrap",
-        "haml",
-        "sass",
-        "postfix",
-        "scrum",
-        "trello",
-        "git",
-        "ubuntu",
-        "nginx",
-        "unicorn",
-        "god",
-        "chrome extension"
+        "elasticsearch",
+        "devops",
+        "chrome extension",
+        "customer interviews",
+        "product definition",
+        "agile"
       ]},
     "grove": {
       "name": "Grove",
-      "summary": "A private community for Sequoia founders.",
+      "summary": "Defined and built a private community site for Sequoia founders.",
       "skills": [
         "rails",
         "mongodb",
-        "boostrap",
         "backbone",
-        "jquery",
-        "javascript",
-        "coffeescript",
-        "haml",
-        "sass",
-        "kanban",
-        "trello",
-        "git",
-        "ubuntu",
-        "apache",
-        "passenger"
+        "boostrap",
+        "customer interviews",
+        "product definition",
+        "agile"
       ]},
     "grove-public": {
       "name": "Grove Public",
-      "summary": "Publicly published Sequoia insights for entrepreneurs.",
+      "summary": "Defined and built a content site for public Sequoia insights.",
       "skills": [
         "rails",
         "mongodb",
-        "boostrap",
         "backbone",
+        "boostrap",
+        "product definition"
+      ]},
+    "sms": {
+      "name": "Sequoia SMS",
+      "summary": "Defined and built a minimum viable CRM that grew into an essential tool for Sequoia partners.",
+      "skills": [
+        "rails",
+        "mongodb",
+        "backbone",
+        "objective c",
+        "mac",
+        "ios",
+        "customer interviews",
+        "product definition",
+        "agile"
+      ]},
+    "rleague": {
+      "name": "Research League",
+      "summary": "Defined and built a private social network for the investment community.",
+      "skills": [
+        "rails",
+        "mysql",
         "jquery",
-        "javascript",
-        "coffeescript",
-        "haml",
-        "sass",
-        "kanban",
-        "trello",
-        "git",
-        "apache",
-        "passenger"
+        "product definition",
+        "agile"
+      ]},
+    "solarclover": {
+      "name": "SolarClover Dashboard",
+      "summary": "Built a mobile dashboard for home solar installations.",
+      "skills": [
+        "python",
+        "jquery",
+        "google appengine",
+        "objective c",
+        "ios",
+        "agile"
+      ]},
+    "sentinel": {
+      "name": "Tyco Dashboard",
+      "summary": "Built a mobile dashboard for corporate solar installations.",
+      "skills": [
+        "python",
+        "jquery",
+        "google appengine",
+        "objective c",
+        "ios",
+        "agile"
+      ]},
+    "spotxchange": {
+      "name": "SpotXChange",
+      "summary": "Researched, designed and prototyped for an ad exchange publisher dashboard",
+      "skills": [
+        "customer interviews",
+        "product definition"
+      ]},
+    "nomic": {
+      "name": "Nomic",
+      "summary": "Performed research, design and prototyping for an early stage retail startup.",
+      "skills": [
+        "rails",
+        "customer interviews",
+        "product definition"
+      ]},
+    "stretch": {
+      "name": "Stretch the Imagination",
+      "summary": "Maintained legacy Rails app for a preschool.",
+      "skills": [
+        "rails"
       ]}
   },
   "hobbies": [

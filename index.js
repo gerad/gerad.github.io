@@ -136,6 +136,13 @@ app.directive('headerTransmorpher', function() {
   };
 });
 
+app.directive('skills', function() {
+  return {
+    scope: { skills: "=" },
+    template: '<span class="skill" ng-repeat="skill in skills">{{skill}}</span>'
+  };
+})
+
 app.filter('inGroupsOf', function() {
   return function(input, count) {
     if (!angular.isArray(input)) { return input; }
@@ -157,16 +164,38 @@ app.filter('inGroupsOf', function() {
 
 
 function deserialize(json) {
-  // convert project names to project objects
+  var skillCounts = {};
+
   for (var i = 0, il = json.jobs.length; i < il; ++i) {
     var job = json.jobs[i];
 
     if (!job.projects) { job.projects = []; }
     for (var j = 0, jl = job.projects.length; j < jl; ++j) {
+      // convert project names to project objects
       var projectName = job.projects[j];
-      job.projects[j] = json.projects[projectName];
+      var project = json.projects[projectName]
+      job.projects[j] = project;
+
+      // aggregate the skill counts
+      for (var k = 0, kl = project.skills.length; k < kl; ++k) {
+        var skill = project.skills[k];
+
+        if (skill in skillCounts) {
+          skillCounts[skill]++;
+        } else {
+          skillCounts[skill] = 1;
+        }
+      }
     }
   }
+
+  // set json.skills to the project skils ordered by descending count
+  var skills = [];
+  for (var skill in skillCounts) { skills.push(skill); }
+  json.skills = skills.sort(function(a,b) { return skillCounts[b] - skillCounts[a]; })
+
+  console.log(json.skills);
+  console.log(skillCounts);
 
   return json;
 }

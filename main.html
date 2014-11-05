@@ -17,7 +17,7 @@
 <!-- summary -->
 <div id="summary">
   <h2>Summary</h2>
-  <div class="contact-details visible-sm-block">
+  <div class="contact-details visible-sm-block visible-xs-block">
     <h5>Contact</h5>
     <ng-include src="'contact.html'"></ng-include>
   </div>
@@ -38,9 +38,7 @@
 
   <div class="skills">
     <h5>Skills</h5>
-    <ul class="list-unstyled">
-      <li ng-repeat="skill in skills()">{{skill}}</li>
-    </ul>
+    <span skills="skills"></span>
   </div>
 
   <div class="hobbies">
@@ -80,12 +78,10 @@
 
       <!-- job projects -->
       <div class="row job-projects" ng-repeat="group in job.projects | inGroupsOf:3">
-        <div class="col-sm-4 job-project" ng-repeat="project in group">
+        <div class="col-sm-4 project" ng-repeat="project in group">
           <h4>{{project.name}}</h4>
-          <p>{{project.summary}}</p>
-          <div class="skills">
-            <span class="skill" ng-repeat="skill in project.skills">{{skill}}
-            </span>
+          <p class="summary">{{project.summary}}</p>
+          <div skills="project.skills">
           </div>
         </div>
       </div>

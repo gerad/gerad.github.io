@@ -1,8 +1,14 @@
-body { color: #444; }
+body, a, a:hover {
+  color: #555;
+}
 
 h1, h2, h3, h4, h5 {
   color: #333;
   margin: 0;
+}
+
+i.fa {
+  color: #777;
 }
 
 h1 { font-size: x-large; }
@@ -11,11 +17,34 @@ h3 { font-size: medium; }
 h4 { font-size: small; }
 h5 { font-size: x-small; }
 
+
+/* general classes */
+
 h2 {
   border-bottom: 1px solid #EEE;
   color: #888;
   font-weight: normal;
   margin: 1em 0 0.25em;
+}
+
+.project .summary {
+  font-size: small;
+  margin-bottom: 0;
+}
+
+.skill {
+  display: inline-block;
+  margin: 0 2px 2px 0;
+  padding: 2px 4px;
+  font-size: xx-small;
+  text-transform: uppercase;
+  background-color: #F5F9FD;
+  border-radius: 4px;
+  color: #85A0C8;
+}
+
+.contact-details li {
+  white-space: nowrap;
 }
 
 /* sidebar */
@@ -135,6 +164,7 @@ header .backdrop {
   width: 80px;
   padding: 0;
   margin: 0;
+  text-decoration: underline;
 }
 
 @media (max-width: 360px) {
@@ -169,6 +199,10 @@ header .backdrop {
   content: ""
 }
 
+#summary .skills li:after {
+  display: none;
+}
+
 /* end summary details */
 
 /* employment details */
@@ -197,6 +231,10 @@ header .backdrop {
 #employment .dates,
 #employment .duration {
   font-size: 12px;
+}
+
+#employment .job-projects h4 {
+  margin-top: 10px;
 }
 
 /* end employment details */
