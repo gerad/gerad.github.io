@@ -1,5 +1,6 @@
 { "name": "Gerad Suyderhoud",
   "image_url": "/gerad-photo.jpg",
+  "pdf_url": "/gerad-resume.pdf",
   "pronounciation": "j'air-red cider-how'd",
   "pronounciation_url": "/gerad-pronounced.m4a", 
   "title": "Product | Development | Data",
@@ -12,7 +13,7 @@
   "twitter": "gerad",
   "degrees": [
     { "id": "stanford",
-      "school": "Stanford",
+      "school": "Stanford, Computer Science ‘03",
       "summary": "B.S. Computer Science, Economics Minor; Postgraduate Coursework in Statistics"}
   ],
   "jobs": [
@@ -27,7 +28,6 @@
         "mongodb",
         "jquery",
         "boostrap",
-        "project management",
         "devops",
         "data analysis"
       ]},
@@ -57,7 +57,10 @@
       "dates": "Aug 2007 – Mar 2010",
       "duration": "2 years 8 months",
       "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and eventually ended up co-leading the company.",
-      "skills": ["rails", "mysql", "jquery", "customer development", "product definition", "project management"]},
+      "skills": [
+        "rails",
+        "mysql",
+        "jquery"]},
      { "id": "apple",
         "company": "Apple",
         "title": "Lead Analyst",
@@ -81,16 +84,14 @@
       "summary": "You’re looking at it.",
       "skills": [
         "angular",
-        "bootstrap",
-        "product definition"
+        "bootstrap"
       ]},
     "caddyhack": {
       "name": "Caddyhack",
       "summary": "Strava for golf. Social golf tracking for the Apple watch.",
       "skills": [
         "objective c",
-        "ios",
-        "product definition"
+        "ios development"
       ]},
     "golfcourseswiki": {
       "name": "Golf Courses Wiki",
@@ -99,32 +100,27 @@
         "node",
         "mongodb",
         "angular",
-        "bootstrap",
-        "product definition"
+        "bootstrap"
       ]},
     "tractor": {
       "name": "Tractor",
       "summary": "Automatic time tracking from your menubar.",
       "skills": [
         "objective c",
-        "mac",
-        "sqlite",
-        "product definition"
+        "mac development",
+        "sqlite"
       ]},
     "gifster": {
       "name": "Gifster",
       "summary": "Create animated gif screencasts. Great for bug reports.",
       "skills": [
         "objective c",
-        "mac",
-        "product definition"
+        "mac development"
       ]},
     "distractless": {
       "name": "Distractless",
       "summary": "A chrome extension to eliminate internet distractions.",
       "skills": [
-        "chrome extension",
-        "product definition"
       ]},
     "monitaur": {
       "name": "Monitaur",
@@ -134,8 +130,7 @@
         "mysql",
         "node",
         "jquery",
-        "product definition",
-        "project management"
+        "product definition"
       ]},
     "lazeroids": {
       "name": "Lazeroids",
@@ -144,9 +139,7 @@
         "rails",
         "node",
         "python",
-        "jquery",
-        "product definition",
-        "project management"
+        "jquery"
       ]},
     "gentrifire": {
       "name": "Gentrifire",
@@ -156,8 +149,6 @@
         "mysql",
         "jquery",
         "R",
-        "product definition",
-        "project management",
         "data analysis"
       ]},
     "forwardtrail": {
@@ -166,14 +157,10 @@
       "skills": [
         "rails",
         "postgres",
+        "elasticsearch",
         "ember",
         "bootstrap",
-        "elasticsearch",
-        "devops",
-        "chrome extension",
-        "customer development",
-        "product definition",
-        "project management"
+        "devops"
       ]},
     "grove": {
       "name": "Grove",
@@ -182,20 +169,16 @@
         "rails",
         "mongodb",
         "backbone",
-        "boostrap",
-        "customer development",
-        "product definition",
-        "project management"
+        "boostrap"
       ]},
     "grove-public": {
       "name": "Grove Public",
-      "summary": "Defined and built a content site for public Sequoia insights.",
+      "summary": "Defined and built a site for public Sequoia content.",
       "skills": [
         "rails",
         "mongodb",
         "backbone",
-        "boostrap",
-        "product definition"
+        "boostrap"
       ]},
     "sms": {
       "name": "Sequoia SMS",
@@ -205,11 +188,8 @@
         "mongodb",
         "backbone",
         "objective c",
-        "mac",
-        "ios",
-        "customer development",
-        "product definition",
-        "project management"
+        "mac development",
+        "ios development"
       ]},
     "rleague": {
       "name": "Research League",
@@ -217,9 +197,7 @@
       "skills": [
         "rails",
         "mysql",
-        "jquery",
-        "product definition",
-        "project management"
+        "jquery"
       ]},
     "solarclover": {
       "name": "SolarClover Dashboard",
@@ -227,10 +205,8 @@
       "skills": [
         "python",
         "jquery",
-        "google appengine",
         "objective c",
-        "ios",
-        "project management"
+        "ios development"
       ]},
     "sentinel": {
       "name": "Tyco Dashboard",
@@ -238,25 +214,19 @@
       "skills": [
         "python",
         "jquery",
-        "google appengine",
         "objective c",
-        "ios",
-        "project management"
+        "ios development"
       ]},
     "spotxchange": {
       "name": "SpotXChange",
       "summary": "Researched, designed and prototyped for an ad exchange publisher dashboard",
       "skills": [
-        "customer development",
-        "product definition"
       ]},
     "nomic": {
       "name": "Nomic",
       "summary": "Performed research, design and prototyping for an early stage retail startup.",
       "skills": [
         "rails",
-        "customer development",
-        "product definition",
         "data analysis"
       ]},
     "stretch": {
@@ -273,15 +243,13 @@
         "sas",
         "php",
         "java",
-        "mysql",
-        "product definition"
+        "mysql"
       ]},
     "prdprs": {
       "name": "IT Infrastructure",
       "summary": "Created requirements and performed acceptance testing for IT infrastructure projects.",
       "skills": [
-        "oracle",
-        "product definition"
+        "oracle"
       ]},
     "listselection": {
       "name": "Customer Analysis",
