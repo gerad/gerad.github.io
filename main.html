@@ -55,12 +55,12 @@
 <div id="employment">
   <h2>Employment</h2>
   <div class="row" ng-repeat="job in jobs">
-    <div id="job.id" class="col-md-12">
+    <div id="{{job.id}}" class="col-md-12">
       <div class="row">
         <div class="col-xs-8">
           <h3>
-            <div class="title">{{job.title}}</div>
             <div class="company">{{job.company}}</div>
+            <div class="title">{{job.title}}</div>
           </h3>
         </div>
         <div class="col-xs-4 text-right">
@@ -81,7 +81,7 @@
 <div id="hobbies">
   <h2>Hobbies</h2>
   <div class="row" ng-repeat="hobby in hobbies">
-    <div id="hobby.id" class="col-md-12">
+    <div id="{{hobby.id}}" class="col-md-12">
       <h3>{{hobby.name}}</h3>
       <p class="summary">{{hobby.summary}}</p>
     </div>

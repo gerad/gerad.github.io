@@ -69,6 +69,8 @@ Transmorpher.prototype.onScroll = function() {
   var headingTop = this.heading.h1.top - scrollTop;
   var headerTop = this.header.h1.top;
 
+  console.log(headingTop, headerTop);
+
   var headerHidden, headerShowing, headerShown, h1FontSize, imgHeight;
 
   if (headingTop >= headerTop) {
@@ -113,9 +115,13 @@ Transmorpher.prototype.updateDOM = function() {
   this.$body.toggleClass('header-hidden', this.headerHidden);
   this.$body.toggleClass('header-showing', this.headerShowing);
   this.$body.toggleClass('header-shown', this.headerShown);
-  this.header.h1.$el.css('font-size', this.h1FontSize + 'px');
-  this.header.img.$el.css('height', this.imgHeight + 'px');
-}
+
+  var fontSize = (this.h1FontSize ? this.h1FontSize + 'px' : '');
+  this.header.h1.$el.css('font-size', fontSize);
+
+  var imgHeight = (this.imgHeight ? this.imgHeight + 'px' : '');
+  this.header.img.$el.css('height', imgHeight);
+};
 
 app.directive('headerTransmorpher', function() {
   return function link(scope, iElement, iAttrs, controller) {
