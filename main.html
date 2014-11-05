@@ -56,7 +56,7 @@
   <h2>Employment</h2>
   <div class="row" ng-repeat="job in jobs">
     <div id="{{job.id}}" class="col-md-12">
-      <div class="row">
+      <div class="row job-header">
         <div class="col-xs-8">
           <h3>
             <div class="company">{{job.company}}</div>
@@ -65,10 +65,10 @@
         </div>
         <div class="col-xs-4 text-right">
           <div class="dates">{{job.dates}}</div>
-          <div class="duration">{{job.duration}}</div>
+          <div class="duration text-muted" ng-if="job.duration">({{job.duration}})</div>
         </div>
       </div>
-      <div class="row">
+      <div class="row job-details">
         <div class="col-xs-12">
           <p class="summary">{{job.summary}}</p>
         </div>

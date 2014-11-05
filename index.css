@@ -183,5 +183,14 @@ header .backdrop {
   margin-top: 5px
 }
 
+#employment .dates {
+  margin-top: 15px;
+}
+
+#employment .dates,
+#employment .duration {
+  font-size: small;
+}
+
 /* end employment details */
 
