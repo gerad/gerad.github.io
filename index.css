@@ -174,8 +174,12 @@ header .backdrop {
 
 /* employment details */
 
-#employment h3 {
-  margin: 0.75em 0 0.25em;
+#employment h2{
+  margin-bottom: 0.5em;
+}
+
+#employment .job {
+  margin-bottom: 1em;
 }
 
 #employment .title {
@@ -184,7 +188,7 @@ header .backdrop {
 }
 
 #employment .dates {
-  margin-top: 15px;
+  margin-top: 2px;
 }
 
 #employment .dates,
