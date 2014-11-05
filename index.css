@@ -43,6 +43,13 @@ h2 {
   color: #85A0C8;
 }
 
+.skill:hover,
+.skill.highlight {
+  background-color: #E9F4FF;
+  color: #4966A6;
+  cursor: default;
+}
+
 .contact-details li {
   white-space: nowrap;
 }

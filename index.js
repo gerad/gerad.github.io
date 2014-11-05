@@ -136,6 +136,46 @@ app.directive('headerTransmorpher', function() {
   };
 });
 
+/*
+app.directive('skillHighlights', function() {
+  function controller($scope) {
+    this.skillClassName = function(skill) {
+      return skill.replace(/\W/g,'-').toLowerCase();
+    }
+
+    this.highlight = function(skill) {
+      console.log('highlight', skill);
+    }
+  }
+
+  return {
+    scope: {},
+    controller: controller
+  };
+});
+
+app.directive('skill', function() {
+  return {
+    restrict: 'C',
+    require: '^skillHighlights',
+    link: function(scope, element, attrs, skillHighlights) {
+      function mouseover() {
+        skillHighlights.highlight(scope.skill);
+      }
+
+      scope.$on('skill-hover', function() {
+        console.log('skill-over', arguments);
+      });
+
+      element.on('mouseover', mouseover);
+      scope.$on('$destroy', function() {
+        element.off('mouseover', mouseover);
+      });
+    }
+  };
+});
+*/
+
 app.directive('skills', function() {
   return {
     scope: { skills: "=" },
