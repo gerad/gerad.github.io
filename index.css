@@ -217,7 +217,7 @@ header .backdrop {
 }
 
 #employment .job {
-  margin-bottom: 1.5em;
+  margin-bottom:1.75em;
 }
 
 #employment .title {
@@ -232,6 +232,14 @@ header .backdrop {
 #employment .dates,
 #employment .duration {
   font-size: 12px;
+}
+
+#employment .job .summary {
+  margin-bottom: 0.5em;
+}
+
+#employment .job-projects {
+  padding: 0 15px;
 }
 
 #employment .job-projects h4 {

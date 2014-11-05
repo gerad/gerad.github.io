@@ -21,7 +21,16 @@
       "title": "Creator",
       "dates": "May 2010 – Present",
       "duration": "4 years 7 months",
-      "summary": "I created and run a 48-hour hackathon for developers to build apps using node.js. Over 1000 participate from around the world." },
+      "summary": "I created and run a 48-hour hackathon for developers to build apps using node.js. Over 1000 participate from around the world.",
+      "skills": [
+        "node",
+        "mongodb",
+        "jquery",
+        "boostrap",
+        "project management",
+        "devops",
+        "data analysis"
+      ]},
     { "id": "sequoia",
       "company": "Sequoia Capital",
       "title": "(co)Labs Entrepreneur",
@@ -47,7 +56,8 @@
       "title": "Product Manager",
       "dates": "Aug 2007 – Mar 2010",
       "duration": "2 years 8 months",
-      "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and eventually ended up co-leading the company." },
+      "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and eventually ended up co-leading the company.",
+      "skills": ["rails", "mysql", "jquery", "customer development", "product definition", "project management"]},
      { "id": "apple",
         "company": "Apple",
         "title": "Lead Analyst",
@@ -81,8 +91,7 @@
         "objective c",
         "ios",
         "product definition"
-      ]
-    },
+      ]},
     "golfcourseswiki": {
       "name": "Golf Courses Wiki",
       "summary": "An open golf course database. Used as a data source for Caddyhack.",
@@ -126,7 +135,7 @@
         "node",
         "jquery",
         "product definition",
-        "agile"
+        "project management"
       ]},
     "lazeroids": {
       "name": "Lazeroids",
@@ -137,7 +146,7 @@
         "python",
         "jquery",
         "product definition",
-        "agile"
+        "project management"
       ]},
     "gentrifire": {
       "name": "Gentrifire",
@@ -148,7 +157,7 @@
         "jquery",
         "R",
         "product definition",
-        "agile",
+        "project management",
         "data analysis"
       ]},
     "forwardtrail": {
@@ -164,7 +173,7 @@
         "chrome extension",
         "customer development",
         "product definition",
-        "agile"
+        "project management"
       ]},
     "grove": {
       "name": "Grove",
@@ -176,7 +185,7 @@
         "boostrap",
         "customer development",
         "product definition",
-        "agile"
+        "project management"
       ]},
     "grove-public": {
       "name": "Grove Public",
@@ -200,7 +209,7 @@
         "ios",
         "customer development",
         "product definition",
-        "agile"
+        "project management"
       ]},
     "rleague": {
       "name": "Research League",
@@ -210,7 +219,7 @@
         "mysql",
         "jquery",
         "product definition",
-        "agile"
+        "project management"
       ]},
     "solarclover": {
       "name": "SolarClover Dashboard",
@@ -221,7 +230,7 @@
         "google appengine",
         "objective c",
         "ios",
-        "agile"
+        "project management"
       ]},
     "sentinel": {
       "name": "Tyco Dashboard",
@@ -232,7 +241,7 @@
         "google appengine",
         "objective c",
         "ios",
-        "agile"
+        "project management"
       ]},
     "spotxchange": {
       "name": "SpotXChange",
