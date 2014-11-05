@@ -12,7 +12,8 @@
   "twitter": "gerad",
   "degrees": [
     { "id": "stanford",
-      "school": "Stanford" }
+      "school": "Stanford",
+      "summary": "B.S. Computer Science, Economics Minor; Postgraduate Coursework in Statistics"}
   ],
   "jobs": [
     { "id": "nko",
@@ -46,19 +47,23 @@
       "title": "Product Manager",
       "dates": "Aug 2007 – Mar 2010",
       "duration": "2 years 8 months",
-      "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and eventually ended up leading the company." },
+      "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and eventually ended up co-leading the company." },
      { "id": "apple",
         "company": "Apple",
         "title": "Lead Analyst",
         "dates": "Mar 2005 – Aug 2007",
         "duration": "2 years 6 months",
-        "summary": "I analyzed customer data for Apple’s Product Marketing team." },
+        "summary": "I analyzed customer data for Apple’s Product Marketing team.",
+        "projects": [
+          "datamart", "prdprs", "listselection"
+        ]},
       { "id": "cornerstone",
         "company": "Cornerstone Research",
         "title": "Analyst",
         "dates": "Sep 2003 – Mar 2005",
         "duration": "1 year 7 months",
-        "summary": "I performed economic analyses in a variety of industries and practice areas." }
+        "summary": "I performed economic analyses in a variety of industries and practice areas.",
+        "projects": [ "casework", "opswork" ]}
   ],
   "projects": {
     "resume": {
@@ -99,7 +104,7 @@
       ]},
     "gifster": {
       "name": "Gifster",
-      "summary": "Screencast into an animated gif. Great for bug reports.",
+      "summary": "Create animated gif screencasts. Great for bug reports.",
       "skills": [
         "objective c",
         "mac",
@@ -143,7 +148,8 @@
         "jquery",
         "R",
         "product definition",
-        "agile"
+        "agile",
+        "data analysis"
       ]},
     "forwardtrail": {
       "name": "ForwardTrail",
@@ -156,7 +162,7 @@
         "elasticsearch",
         "devops",
         "chrome extension",
-        "customer interviews",
+        "customer development",
         "product definition",
         "agile"
       ]},
@@ -168,7 +174,7 @@
         "mongodb",
         "backbone",
         "boostrap",
-        "customer interviews",
+        "customer development",
         "product definition",
         "agile"
       ]},
@@ -192,7 +198,7 @@
         "objective c",
         "mac",
         "ios",
-        "customer interviews",
+        "customer development",
         "product definition",
         "agile"
       ]},
@@ -232,7 +238,7 @@
       "name": "SpotXChange",
       "summary": "Researched, designed and prototyped for an ad exchange publisher dashboard",
       "skills": [
-        "customer interviews",
+        "customer development",
         "product definition"
       ]},
     "nomic": {
@@ -240,15 +246,60 @@
       "summary": "Performed research, design and prototyping for an early stage retail startup.",
       "skills": [
         "rails",
-        "customer interviews",
-        "product definition"
+        "customer development",
+        "product definition",
+        "data analysis"
       ]},
     "stretch": {
       "name": "Stretch the Imagination",
       "summary": "Maintained legacy Rails app for a preschool.",
       "skills": [
         "rails"
-      ]}
+      ]},
+    "datamart": {
+      "name": "Data Mart",
+      "summary": "Developed marketing data mart for ad hoc marketing queries.",
+      "skills": [
+        "oracle",
+        "sas",
+        "php",
+        "java",
+        "mysql",
+        "product definition"
+      ]},
+    "prdprs": {
+      "name": "IT Infrastructure",
+      "summary": "Created requirements and performed acceptance testing for IT infrastructure projects.",
+      "skills": [
+        "oracle",
+        "product definition"
+      ]},
+    "listselection": {
+      "name": "Customer Analysis",
+      "summary": "Analyzed customer data to target marketing campaigns.",
+      "skills": [
+        "oracle",
+        "sas",
+        "excel",
+        "R",
+        "data analysis"
+      ]},
+    "casework": {
+      "name": "Case Work",
+      "summary": "Supported expert testimony by creating economic and statistical models using SAS, SQL and Excel.",
+      "skills": [
+        "sas",
+        "excel",
+        "visual basic"
+      ]},
+    "opswork": {
+      "name": "Process Automation",
+      "summary": "Streamlined case and data management practices by automating tasks.",
+      "skills": [
+        "visual basic",
+        "perl"
+      ]
+    }
   },
   "hobbies": [
     { "id": "dad",

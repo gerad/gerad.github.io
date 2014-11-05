@@ -89,6 +89,17 @@
   </div>
 </div>
 
+<!-- education -->
+<div id="education">
+  <h2>Education</h2>
+  <div class="row" ng-repeat="degree in degrees">
+    <div id="{{degree.id}}" class="col-md-12">
+      <h3>{{degree.school}}</h3>
+      <p class="summary">{{degree.summary}}</p>
+    </div>
+  </div>
+</div>
+
 <!-- hobbies -->
 <div id="hobbies">
   <h2>Hobbies</h2>
@@ -99,4 +110,3 @@
     </div>
   </div>
 </div>
-
