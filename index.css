@@ -161,6 +161,7 @@ header {
 header .backdrop {
   padding: 5px 10px;
   margin: 0 -10px;
+  background-color: white;
 }
 
 header h1 {
@@ -180,9 +181,7 @@ header h1 .email {
   transition: opacity 0.5s;
 }
 
-header .backdrop {
-  background-color: white;
-}
+/* TODO disable the header on narrow screens */
 
 .header-hidden header {
   display: none;

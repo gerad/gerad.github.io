@@ -43,7 +43,7 @@
       "title": "Owner",
       "dates": "Ongoing",
       "summary": "I have many side-projects where I dabble with new technology or product ideas. Here are some of my favorites.",
-      "projects": ["caddyhack", "golfcourseswiki", "tractor", "gifster", "distractless", "monitaur", "lazeroids", "gentrifire", "resume"] },
+      "projects": ["caddyhack", "golfcourseswiki", "tractor", "monitaur", "lazeroids", "gentrifire", "gifster", "distractless",  "resume"] },
     { "id": "fortnight",
       "company": "Fortnight Labs",
       "title": "Founder",
@@ -56,7 +56,7 @@
       "title": "Product Manager",
       "dates": "Aug 2007 – Mar 2010",
       "duration": "2 years 8 months",
-      "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and eventually ended up co-leading the company.",
+      "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and ended up co-leading the company.",
       "skills": [
         "rails",
         "mysql",
@@ -88,7 +88,7 @@
       ]},
     "caddyhack": {
       "name": "Caddyhack",
-      "summary": "A caddy on your wrist. Social golf analysis for the Apple watch.",
+      "summary": "A caddy on your wrist. A social golf tracker for the Apple watch.",
       "skills": [
         "objective c",
         "ios development"
@@ -129,8 +129,7 @@
         "rails",
         "mysql",
         "node",
-        "jquery",
-        "product definition"
+        "jquery"
       ]},
     "lazeroids": {
       "name": "Lazeroids",
