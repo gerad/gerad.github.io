@@ -1,3 +1,7 @@
+body {
+  background-color: #EEE;
+}
+
 body, a, a:hover {
   color: #555;
 }
@@ -16,6 +20,13 @@ h5 { font-size: x-small; }
 /* print stylesheets */
 
 @media print {
+  header,
+  .buttons,
+  .sidebar-column,
+  #contact li:not(:first-child) {
+    display: none !important;
+  }
+
   #heading,
   #summary,
   #employment .job-overview,
@@ -23,10 +34,6 @@ h5 { font-size: x-small; }
   #education,
   #hobbies {
     page-break-inside: avoid;
-  }
-
-  #download {
-    display: none;
   }
 }
 
@@ -65,20 +72,65 @@ h2 {
   cursor: default;
 }
 
-.contact-details li {
-  white-space: nowrap;
+/* main */
+
+#main-container {
+  margin-top: 2px;
+}
+
+.main-column {
+  padding: 0 30px;  
+}
+
+header .main-column {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#main-container .main-column {
+  background-color: white;
+  box-shadow: 0 0 5px gray;
 }
 
 /* sidebar */
 
 .sidebar-column {
-  padding-top: 38px;
+  padding-top: 30px;
 }
 
-@media print {
-  .sidebar-column {
-    display: none;
-  }
+.sidebar-affixed {
+  position: fixed;
+}
+
+#sidenav {
+  margin: 20px 5px;
+}
+
+#sidenav ul {
+  padding: 0 20px;
+}
+
+#sidenav > ul {
+  margin-left: -20px;
+}
+
+#sidenav li {
+  padding: 0;
+  margin: 0;
+}
+
+#sidenav a {
+  padding: 5px 0;
+  display: block;
+}
+
+#sidenav .nav .nav a {
+  padding: 2px 0;
+  font-size: small;
+}
+
+#sidenav a:hover {
+  text-decoration: underline;
 }
 
 /* end sidebar */
@@ -174,9 +226,22 @@ header .backdrop {
 
 /* end heading details */
 
+/* contact details */
+
+#contact {
+  height: 20px;
+  overflow: hidden;
+}
+
+#contact li {
+  white-space: nowrap;
+}
+
+/* end contact details */
+
 /* summary details */
 
-#summary .indented > div {
+#summary > div {
   margin-bottom: 10px;
 }
 
@@ -194,14 +259,6 @@ header .backdrop {
 @media (max-width: 360px) {
   #summary h5 {
     display: block;
-  }
-}
-
-@media print {
-  #summary h5,
-  #summary .contact-details,
-  #summary .contact-details li {
-    display: block !important;
   }
 }
 

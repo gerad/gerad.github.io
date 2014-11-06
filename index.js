@@ -12,9 +12,17 @@ app.controller("ResumeCtrl", function($scope, $element, $http) {
     $element[0].querySelector('.pronounciation audio').play();
   };
 
-  $scope.skills = function() {
-    return [];
-  }
+  $scope.print = function() {
+    window.print();
+  };
+
+  $scope.setupHeader = function() {
+    $scope.transmorpher.setupHeader();
+  };
+
+  $scope.setupHeading = function() {
+    $scope.transmorpher.setupHeading();
+  };
 });
 
 function Transmorpher() {
@@ -181,7 +189,7 @@ app.directive('skills', function() {
     scope: { skills: "=" },
     template: '<span class="skill" ng-repeat="skill in skills">{{skill}}</span>'
   };
-})
+});
 
 app.filter('inGroupsOf', function() {
   return function(input, count) {

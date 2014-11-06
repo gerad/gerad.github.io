@@ -1,63 +1,76 @@
 <!-- heading -->
 <div id="heading">
-  <div class="row">
-    <div class="col-sm-9">
-      <img ng-src="{{image_url}}">
-      <h1>{{name}}</h1>
-      <!-- <h2>{{title}}</h2> -->
+  <img ng-src="{{image_url}}">
+  <h1>{{name}}</h1>
+  <!-- <h2>{{title}}</h2> -->
 
-      <span class="pronounciation small text-muted" ng-click="pronounce()">
-        <audio src="{{pronounciation_url}}" preload="auto"></audio>
-        <i class="fa fa-volume-up">
-        </i>
-        {{pronounciation}}
-      </span>
+  <span class="pronounciation small text-muted" ng-click="pronounce()">
+    <audio src="{{pronounciation_url}}" preload="auto"></audio>
+    <i class="fa fa-volume-up">
+    </i>
+    {{pronounciation}}
+  </span>
 
-      <p class="objective">{{objective}}</p>
-    </div>
-    <div class="col-sm-3">
-      <a id="download" class="btn btn-primary" href="{{pdf_url}}">
-        <i class="fa fa-download"></i>
-        .pdf
-      </a>
-    </div>
-  </div>
+  <p class="objective">{{objective}}</p>
+</div>
+
+<ul id="contact" class="list-inline">
+  <!-- email -->
+  <li><i class="fa fa-envelope"></i> <a href="mailto:{{email}}">{{email}}</a></li>
+
+  <!-- websit -->
+  <li><i class="fa fa-globe"></i> <a href="{{website}}">{{website}}</a></li>
+
+
+  <!-- github -->
+  <li><i class="fa fa-github"></i> <a href="http://github.com/{{github}}">{{github}}</a></li>
+  <!-- linkedin -->
+  <li><i class="fa fa-linkedin"></i> <a href="http://linkedin.com/in/{{linkedin}}">{{linkedin}}</a></li>
+  <!-- twitter -->
+  <li><i class="fa fa-twitter"></i> <a href="http://twitter.com/{{twitter}}">@{{twitter}}</a></li>
+</ul>
+
+<!-- buttons -->
+<div class="buttons visible-xs-block visible-sm-block">
+  <!-- print button -->
+  <a class="btn btn-default btn-sm" ng-click="print()">
+    <i class="fa fa-print"></i>
+    Print
+  </a>
+  <!-- download button -->
+  <a id="download" class="btn btn-primary btn-sm" href="{{pdf_url}}">
+    <i class="fa fa-download"></i>
+    .pdf
+  </a>
 </div>
 
 <!-- summary -->
 <div id="summary">
   <h2>Summary</h2>
-  <div class="indented">
-    <div class="contact-details visible-sm-block visible-xs-block">
-      <h5>Contact</h5>
-      <ng-include src="'contact.html'"></ng-include>
-    </div>
+  <div class="education">
+    <h5><a href="#education">Education</a></h5>
+    <ul class="list-unstyled">
+      <li ng-repeat="degree in degrees"><a href="#{{degree.id}}">{{degree.school}}</a></li>
+    </ul>
+  </div>
 
-    <div class="employment">
-      <h5>Employment</h5>
-      <ul class="list-unstyled">
-        <li ng-repeat="job in jobs"><a href="#{{job.id}}">{{job.company}}</a></li>
-      </ul>
-    </div>
+  <div class="employment">
+    <h5><a href="#employment">Employment</a></h5>
+    <ul class="list-unstyled">
+      <li ng-repeat="job in jobs"><a href="#{{job.id}}">{{job.company}}</a></li>
+    </ul>
+  </div>
 
-    <div class="education">
-      <h5>Education</h5>
-      <ul class="list-unstyled">
-        <li ng-repeat="degree in degrees"><a href="#{{degree.id}}">{{degree.school}}</a></li>
-      </ul>
-    </div>
+  <div class="skills">
+    <h5>Tech Skills</h5>
+    <span skills="skills"></span>
+  </div>
 
-    <div class="skills">
-      <h5>Tech Skills</h5>
-      <span skills="skills"></span>
-    </div>
-
-    <div class="hobbies">
-      <h5>Hobbies</h5>
-      <ul class="list-unstyled">
-        <li ng-repeat="hobby in hobbies"><a href="#{{hobby.id}}">{{hobby.name}}</a></li>
-      </ul>
-    </div>
+  <div class="hobbies">
+    <h5><a href="#hobbies">Hobbies</a></h5>
+    <ul class="list-unstyled">
+      <li ng-repeat="hobby in hobbies"><a href="#{{hobby.id}}">{{hobby.name}}</a></li>
+    </ul>
   </div>
 </div>
 
