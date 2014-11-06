@@ -232,6 +232,15 @@ app.run(function($anchorScroll) {
 
 function deserialize(json) {
   var skillCounts = {};
+  var boost = 1, decay = 0.025;
+  function countSkill(skill) {
+    boost *= (1 - decay); // decay older skills
+    if (skill in skillCounts) {
+      skillCounts[skill] += boost;
+    } else {
+      skillCounts[skill] = boost;
+    }
+  }
 
   for (var i = 0, il = json.jobs.length; i < il; ++i) {
     var job = json.jobs[i];
@@ -243,16 +252,18 @@ function deserialize(json) {
       var project = json.projects[projectName]
       job.projects[j] = project;
 
-      // aggregate the skill counts
+      // aggregate the project skill counts
       for (var k = 0, kl = project.skills.length; k < kl; ++k) {
         var skill = project.skills[k];
-
-        if (skill in skillCounts) {
-          skillCounts[skill]++;
-        } else {
-          skillCounts[skill] = 1;
-        }
+        countSkill(skill);
       }
+    }
+
+    // aggregate the job skill counts
+    if (!job.skills) { job.skills = []; }
+    for (var j = 0, jl = job.skills.length; j < jl; ++j) {
+      var skill = job.skills[j];
+      countSkill(skill);
     }
   }
 

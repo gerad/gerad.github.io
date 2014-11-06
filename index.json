@@ -27,7 +27,7 @@
         "node",
         "mongodb",
         "jquery",
-        "boostrap",
+        "bootstrap",
         "devops",
         "data analysis"
       ]},
@@ -168,7 +168,7 @@
         "rails",
         "mongodb",
         "backbone",
-        "boostrap"
+        "bootstrap"
       ]},
     "grove-public": {
       "name": "Grove Public",
@@ -177,7 +177,7 @@
         "rails",
         "mongodb",
         "backbone",
-        "boostrap"
+        "bootstrap"
       ]},
     "sms": {
       "name": "Sequoia SMS",
