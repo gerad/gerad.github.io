@@ -181,8 +181,6 @@ header h1 .email {
   transition: opacity 0.5s;
 }
 
-/* TODO disable the header on narrow screens */
-
 .header-hidden header {
   display: none;
 }
@@ -204,6 +202,19 @@ header h1 .email {
 .header-showing #heading img,
 .header-showing #heading h1 {
   visibility: hidden;
+}
+
+/* disable the header and transmorphing on narrow screens */
+
+@media (max-width: 400px) {
+  header {
+    display: none;
+  }
+
+  .header-showing #heading img,
+  .header-showing #heading h1 {
+    visibility: visible;
+  }
 }
 
 /* end morphing header */
