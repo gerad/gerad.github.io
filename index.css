@@ -23,8 +23,21 @@ h5 { font-size: x-small; }
   header,
   .buttons,
   .sidebar-column,
-  #contact li:not(:first-child) {
+  #contact li:first-child a:after,
+  #contact li:not(:first-child),
+  #summary h2,
+  #employment .skill,
+  #hobbies {
     display: none !important;
+  }
+
+  #employment .project h4,
+  #employment .project .summary {
+    display: inline;
+  }
+
+  #employment .project .summary:before {
+    content: " - ";
   }
 
   #heading,
@@ -79,7 +92,7 @@ h2 {
 }
 
 .main-column {
-  padding: 0 30px;  
+  padding: 10px 30px;
 }
 
 header .main-column {
