@@ -202,6 +202,25 @@ app.filter('inGroupsOf', function() {
   };
 });
 
+app.run(function($anchorScroll) {
+  $anchorScroll.yOffset = function() {
+    return $('header').height() + 5;
+  };
+}).directive('href', function($anchorScroll, $location) {
+  return function link($scope, $element, $attrs) {
+    function scroll() {
+      var href = $attrs.href;
+      if (href[0] !== '#') { return; }
+      $location.hash(href.slice(1));
+      $anchorScroll();
+    }
+
+    $element.on('click', scroll);
+    $scope.$on('$destroy', function() {
+      $element.off('click', scroll);
+    });
+  };
+});
 
 function deserialize(json) {
   var skillCounts = {};
