@@ -1,13 +1,14 @@
 <html ng-app="gsResume" ng-controller="ResumeCtrl">
   <head>
-    <!-- begin json inlined from index.json@900d2dc -->
+    <!-- begin json inlined from index.json@6d8c999 -->
     <script>
       window.resume =
-        { "name": "Gerad Suyderhoud",
-          "image_url": "/gerad-photo.jpg",
+        {
+          "name": "Gerad Suyderhoud",
+          "image_url": "./gerad-photo.jpg",
           "pdf_url": "/gerad-resume.pdf",
-          "pronounciation": "j'air-red cider-how'd",
-          "pronounciation_url": "/gerad-pronounced.m4a", 
+          "pronounciation": "j-air-red cider-how-d",
+          "pronounciation_url": "/gerad-pronounced.m4a",
           "title": "Product | Development | Data",
           "objective": "I’m passionate about creating delightful software that improves people’s everyday lives.",
           "summary": "I am at my best when working with highly-engaged teams to solve real problems.",
@@ -17,17 +18,39 @@
           "linkedin": "geradsuyderhoud",
           "twitter": "gerad",
           "degrees": [
-            { "id": "stanford",
+            {
+              "id": "stanford",
               "school": "Stanford, Computer Science ‘03",
-              "summary": "B.S. Computer Science, Economics Minor; Postgraduate Coursework in Statistics"}
+              "summary": "B.S. Computer Science, Economics Minor; Postgraduate Coursework in Statistics"
+            }
           ],
           "jobs": [
-            { "id": "nko",
+            {
+              "id": "gladly",
+              "company": "Gladly",
+              "title": "Director of Engineering",
+              "dates": "Dec 2014 – Jan 2021",
+              "duration": "6 years 1 month",
+              "summary": "First outside engineer hired. Grew the company to 40 engineers. Led half the engineering team.",
+              "skills": [
+                "node",
+                "go",
+                "react",
+                "postgres",
+                "clean architecture",
+                "mqtt",
+                "kafka",
+                "kubernetes",
+                "aws"
+              ]
+            },
+            {
+              "id": "nko",
               "company": "Node Knockout",
               "title": "Creator",
-              "dates": "May 2010 – Present",
-              "duration": "4 years 7 months",
-              "summary": "I created and run a 48-hour hackathon for developers to build apps using node.js. Over 1000 participate from around the world.",
+              "dates": "May 2010 – Oct 2014",
+              "duration": "4 years 5 months",
+              "summary": "I created and ran a 48-hour hackathon for developers to build apps using node.js. Over 1000 participate from around the world.",
               "skills": [
                 "node",
                 "mongodb",
@@ -35,126 +58,125 @@
                 "bootstrap",
                 "devops",
                 "data analysis"
-              ]},
-            { "id": "sequoia",
+              ]
+            },
+            {
+              "id": "sequoia",
               "company": "Sequoia",
               "title": "(co)Labs Entrepreneur",
               "dates": "Jun 2013 – Oct 2014",
               "duration": "1 year 5 months",
               "summary": "I was honored to be one of Sequoia’s founding “(co)Labs Entrepreneurs.”",
-              "projects": ["forwardtrail", "grove", "grove-public"] },
-            { "id": "suyderhoud-llc",
+              "projects": ["forwardtrail", "grove", "grove-public"]
+            },
+            {
+              "id": "suyderhoud-llc",
               "company": "Suyderhoud LLC",
               "title": "Owner",
               "dates": "Ongoing",
               "summary": "I have many side-projects where I dabble with new technology or product ideas. Here are some of my favorites.",
-              "projects": ["caddyhack", "golfcourseswiki", "tractor", "monitaur", "lazeroids", "gentrifire", "gifster", "distractless",  "resume"] },
-            { "id": "fortnight",
+              "projects": [
+                "caddyhack",
+                "golfcourseswiki",
+                "tractor",
+                "monitaur",
+                "lazeroids",
+                "gentrifire",
+                "gifster",
+                "distractless",
+                "resume"
+              ]
+            },
+            {
+              "id": "fortnight",
               "company": "Fortnight Labs",
               "title": "Founder",
               "dates": "Mar 2010 – May 2013",
               "duration": "3 years 3 months",
               "summary": "I founded and ran Fortnight Labs, a web design & development consulting company.",
-              "projects": ["sms", "rleague", "solarclover", "sentinel", "spotxchange",  "nomic"]},
-            { "id": "swivel",
+              "projects": [
+                "sms",
+                "rleague",
+                "solarclover",
+                "sentinel",
+                "spotxchange",
+                "nomic"
+              ]
+            },
+            {
+              "id": "swivel",
               "company": "Swivel",
               "title": "Product Manager",
               "dates": "Aug 2007 – Mar 2010",
               "duration": "2 years 8 months",
               "summary": "I joined Swivel, “YouTube for Data,” as a developer. I was quickly promoted to product manager and ended up co-leading the company.",
-              "skills": [
-                "rails",
-                "mysql",
-                "jquery"]},
-             { "id": "apple",
-                "company": "Apple",
-                "title": "Lead Analyst",
-                "dates": "Mar 2005 – Aug 2007",
-                "duration": "2 years 6 months",
-                "summary": "I analyzed customer data for Apple’s Product Marketing team.",
-                "projects": [
-                  "datamart", "prdprs", "listselection"
-                ]},
-              { "id": "cornerstone",
-                "company": "Cornerstone",
-                "title": "Analyst",
-                "dates": "Sep 2003 – Mar 2005",
-                "duration": "1 year 7 months",
-                "summary": "I performed economic analyses in a variety of industries and practice areas.",
-                "projects": [ "casework", "opswork" ]}
+              "skills": ["rails", "mysql", "jquery"]
+            },
+            {
+              "id": "apple",
+              "company": "Apple",
+              "title": "Lead Analyst",
+              "dates": "Mar 2005 – Aug 2007",
+              "duration": "2 years 6 months",
+              "summary": "I analyzed customer data for Apple’s Product Marketing team.",
+              "projects": ["datamart", "prdprs", "listselection"]
+            },
+            {
+              "id": "cornerstone",
+              "company": "Cornerstone",
+              "title": "Analyst",
+              "dates": "Sep 2003 – Mar 2005",
+              "duration": "1 year 7 months",
+              "summary": "I performed economic analyses in a variety of industries and practice areas.",
+              "projects": ["casework", "opswork"]
+            }
           ],
           "projects": {
             "resume": {
               "name": "Résumé",
               "summary": "You’re looking at it.",
-              "skills": [
-                "angular",
-                "bootstrap"
-              ]},
+              "skills": ["angular", "bootstrap"]
+            },
             "caddyhack": {
               "name": "Caddyhack",
               "summary": "A caddy on your wrist. A social golf tracker for the Apple watch.",
-              "skills": [
-                "objective c",
-                "ios development"
-              ]},
+              "skills": ["objective c", "ios development"]
+            },
             "golfcourseswiki": {
               "name": "Golf Courses Wiki",
               "summary": "An open golf course database. Used as a data source for Caddyhack.",
-              "skills": [
-                "node",
-                "mongodb",
-                "angular",
-                "bootstrap"
-              ]},
+              "skills": ["node", "mongodb", "angular", "bootstrap"]
+            },
             "tractor": {
               "name": "Tractor",
               "summary": "Automatic time tracking from your menubar.",
-              "skills": [
-                "objective c",
-                "mac development",
-                "sqlite"
-              ]},
+              "skills": ["objective c", "mac development", "sqlite"]
+            },
             "gifster": {
               "name": "Gifster",
               "summary": "Create animated gif screencasts. Great for bug reports.",
-              "skills": [
-                "objective c",
-                "mac development"
-              ]},
+              "skills": ["objective c", "mac development"]
+            },
             "distractless": {
               "name": "Distractless",
               "summary": "A chrome extension to eliminate internet distractions.",
-              "skills": [
-              ]},
+              "skills": []
+            },
             "monitaur": {
               "name": "Monitaur",
               "summary": "Instant server monitoring. Like Google analytics for  server disk space.",
-              "skills": [
-                "rails",
-                "mysql",
-                "node",
-                "jquery"
-              ]},
+              "skills": ["rails", "mysql", "node", "jquery"]
+            },
             "lazeroids": {
               "name": "Lazeroids",
               "summary": "Real-time massively multiplayer asteroids on the web. Before people did that. Rails Rumble “Most Innovative” award winner.",
-              "skills": [
-                "rails",
-                "node",
-                "python",
-                "jquery"
-              ]},
+              "skills": ["rails", "node", "python", "jquery"]
+            },
             "gentrifire": {
               "name": "Gentrifire",
               "summary": "A tongue-in-cheek approach to finding your next apartment.",
-              "skills": [
-                "rails",
-                "mysql",
-                "jquery",
-                "R",
-                "data analysis"
-              ]},
+              "skills": ["rails", "mysql", "jquery", "R", "data analysis"]
+            },
             "forwardtrail": {
               "name": "ForwardTrail",
               "summary": "Rebuilt Sequoia’s custom CRM system into a commercial product.",
@@ -165,25 +187,18 @@
                 "ember",
                 "bootstrap",
                 "devops"
-              ]},
+              ]
+            },
             "grove": {
               "name": "Grove",
               "summary": "Defined and built a private community site for Sequoia founders.",
-              "skills": [
-                "rails",
-                "mongodb",
-                "backbone",
-                "bootstrap"
-              ]},
+              "skills": ["rails", "mongodb", "backbone", "bootstrap"]
+            },
             "grove-public": {
               "name": "Grove Public",
               "summary": "Defined and built a site for public Sequoia content.",
-              "skills": [
-                "rails",
-                "mongodb",
-                "backbone",
-                "bootstrap"
-              ]},
+              "skills": ["rails", "mongodb", "backbone", "bootstrap"]
+            },
             "sms": {
               "name": "Sequoia SMS",
               "summary": "Defined and built a minimum viable CRM that grew into an essential tool for Sequoia partners.",
@@ -194,123 +209,89 @@
                 "objective c",
                 "mac development",
                 "ios development"
-              ]},
+              ]
+            },
             "rleague": {
               "name": "Research League",
               "summary": "Defined and built a private social network for the investment community.",
-              "skills": [
-                "rails",
-                "mysql",
-                "jquery"
-              ]},
+              "skills": ["rails", "mysql", "jquery"]
+            },
             "solarclover": {
               "name": "SolarClover Dashboard",
               "summary": "Built a mobile dashboard for home solar installations.",
-              "skills": [
-                "python",
-                "jquery",
-                "objective c",
-                "ios development"
-              ]},
+              "skills": ["python", "jquery", "objective c", "ios development"]
+            },
             "sentinel": {
               "name": "Tyco Dashboard",
               "summary": "Built a mobile dashboard for corporate solar installations.",
-              "skills": [
-                "python",
-                "jquery",
-                "objective c",
-                "ios development"
-              ]},
+              "skills": ["python", "jquery", "objective c", "ios development"]
+            },
             "spotxchange": {
               "name": "SpotXChange",
               "summary": "Researched, designed and prototyped for an ad exchange publisher dashboard",
-              "skills": [
-              ]},
+              "skills": []
+            },
             "nomic": {
               "name": "Nomic",
               "summary": "Performed research, design and prototyping for an early stage retail startup.",
-              "skills": [
-                "rails",
-                "data analysis"
-              ]},
+              "skills": ["rails", "data analysis"]
+            },
             "stretch": {
               "name": "Stretch the Imagination",
               "summary": "Maintained legacy Rails app for a preschool.",
-              "skills": [
-                "rails"
-              ]},
+              "skills": ["rails"]
+            },
             "datamart": {
               "name": "Data Mart",
               "summary": "Developed marketing data mart for ad hoc marketing queries.",
-              "skills": [
-                "oracle",
-                "sas",
-                "php",
-                "java",
-                "mysql"
-              ]},
+              "skills": ["oracle", "sas", "php", "java", "mysql"]
+            },
             "prdprs": {
               "name": "IT Infrastructure",
               "summary": "Created requirements and performed acceptance testing for IT infrastructure projects.",
-              "skills": [
-                "oracle"
-              ]},
+              "skills": ["oracle"]
+            },
             "listselection": {
               "name": "Customer Analysis",
               "summary": "Analyzed customer data to target marketing campaigns.",
-              "skills": [
-                "oracle",
-                "sas",
-                "excel",
-                "R",
-                "data analysis"
-              ]},
+              "skills": ["oracle", "sas", "excel", "R", "data analysis"]
+            },
             "casework": {
               "name": "Case Work",
               "summary": "Supported expert testimony by creating economic and statistical models using SAS, SQL and Excel.",
-              "skills": [
-                "sas",
-                "excel",
-                "visual basic"
-              ]},
+              "skills": ["sas", "excel", "visual basic"]
+            },
             "opswork": {
               "name": "Process Automation",
               "summary": "Streamlined case and data management practices by automating tasks.",
-              "skills": [
-                "visual basic",
-                "perl"
-              ]
+              "skills": ["visual basic", "perl"]
             }
           },
           "hobbies": [
-            { "id": "dad",
+            {
+              "id": "dad",
               "name": "Fatherhood",
-              "summary": "My wife and I recently had our first child: Ella Cha Suyderhoud. It’s been more work than I expected, but extremely fulfilling." },
-            { "id": "running",
+              "summary": "Proud father of a girl (7) and a boy (almost 4)."
+            },
+            {
+              "id": "running",
               "name": "Running",
-              "summary": "I run 3-4 days a week. It helps keep me sane. To stay motivated I’ll occasionally compete in a trail race or half marathon. Right now, my next race is the Kaiser Half." },
-            { "id": "triathlon",
+              "summary": "I run 3-4 days a week. It helps keep me sane. To stay motivated I’ll occasionally compete in a trail race or half marathon. Right now, my next race is the Kaiser Half."
+            },
+            {
+              "id": "triathlon",
               "name": "Triathlon",
-              "summary": "I don’t have enough time anymore, but I used to be an avid triathlete. I’ve done: Ironman Lake Tahoe, Vineman Aquabike, Lake Tahoe Triathlon, Lake Tahoe Xterra, Big Kahuna Triathlon, Donner Lake Triathlon, Marin County Triathlon, Santa Cruz Triathlon." }
+              "summary": "I don’t have enough time anymore, but I used to be an avid triathlete. I’ve done: Ironman Lake Tahoe, Vineman Aquabike, Lake Tahoe Triathlon, Lake Tahoe Xterra, Big Kahuna Triathlon, Donner Lake Triathlon, Marin County Triathlon, Santa Cruz Triathlon."
+            }
           ]
         }
     </script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56937013-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-    <!-- end json inlined from index.json@900d2dc -->
+    <!-- end json inlined from index.json@6d8c999 -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title ng-bind="name + ' - ' + title"></title>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <!-- begin css inlined from css/index.css@900d2dc -->
+    <!-- begin css inlined from css/index.css@6d8c999 -->
     <style>
       body {
         background-color: #EEE;
@@ -664,7 +645,7 @@
       /* end employment details */
       
     </style>
-    <!-- end css inlined from css/index.css@900d2dc -->
+    <!-- end css inlined from css/index.css@6d8c999 -->
   </head>
   <body header-transmorpher="transmorpher" skill-highlights>
     <header ng-include="'/html/header.html'" onload="setupHeader()"></header>
@@ -675,27 +656,7 @@
         <div class="col-md-3 sidebar-column hidden-sm" ng-include="'/html/sidebar.html'"></div>
       </div>
     </div>
-    <!-- begin html inlined from html/header.html@900d2dc -->
-    <script type='text/ng-template' id='/html/header.html'>
-      <!-- header -->
-      <div class="container">
-        <div class="row">
-          <div class="col-md-9 main-column">
-            <div class="backdrop">
-              <img ng-src="{{image_url}}">
-              <h1>
-                {{name}}
-                <div class="email">
-                  <i class="fa fa-envelope"></i> <a href="mailto:{{email}}">{{email}}</a>
-                </div>
-              </h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </script>
-    <!-- end html inlined from html/header.html@900d2dc -->
-    <!-- begin html inlined from html/main.html@900d2dc -->
+    <!-- begin html inlined from html/main.html@6d8c999 -->
     <script type='text/ng-template' id='/html/main.html'>
       <!-- heading -->
       <div id="heading">
@@ -827,8 +788,8 @@
         </div>
       </div>
     </script>
-    <!-- end html inlined from html/main.html@900d2dc -->
-    <!-- begin html inlined from html/sidebar.html@900d2dc -->
+    <!-- end html inlined from html/main.html@6d8c999 -->
+    <!-- begin html inlined from html/sidebar.html@6d8c999 -->
     <script type='text/ng-template' id='/html/sidebar.html'>
       <div class="sidebar-affixed">
         <div class="buttons">
@@ -858,298 +819,337 @@
         </div>
       </div>
     </script>
-    <!-- end html inlined from html/sidebar.html@900d2dc -->
+    <!-- end html inlined from html/sidebar.html@6d8c999 -->
+    <!-- begin html inlined from html/header.html@6d8c999 -->
+    <script type='text/ng-template' id='/html/header.html'>
+      <!-- header -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9 main-column">
+            <div class="backdrop">
+              <img ng-src="{{image_url}}">
+              <h1>
+                {{name}}
+                <div class="email">
+                  <i class="fa fa-envelope"></i> <a href="mailto:{{email}}">{{email}}</a>
+                </div>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </script>
+    <!-- end html inlined from html/header.html@6d8c999 -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
-    <!-- begin js inlined from js/index.js@900d2dc -->
+    <!-- begin js inlined from js/index.js@6d8c999 -->
     <script>
-      (function() {
+      (function () {
+        var app = angular.module("gsResume", []);
       
-      var app = angular.module('gsResume', []);
+        app.controller("ResumeCtrl", function ($scope, $element, $http) {
+          $http.get("/index.json").success(function (json) {
+            var resume = deserialize(json);
+            angular.extend($scope, resume);
+          });
       
-      app.controller("ResumeCtrl", function($scope, $element, $http) {
-        $http.get('/index.json').success(function(json) {
-          var resume = deserialize(json);
-          angular.extend($scope, resume);
+          $scope.pronounce = function () {
+            $element[0].querySelector(".pronounciation audio").play();
+          };
+      
+          $scope.print = function () {
+            window.print();
+          };
+      
+          $scope.setupHeader = function () {
+            $scope.transmorpher.setupHeader();
+          };
+      
+          $scope.setupHeading = function () {
+            $scope.transmorpher.setupHeading();
+          };
         });
       
-        $scope.pronounce = function() {
-          $element[0].querySelector('.pronounciation audio').play();
+        function Transmorpher() {
+          this.$body = $(document.body);
+          this.onScroll = this.onScroll.bind(this);
+          this.updateDOM = this.updateDOM.bind(this);
+        }
+      
+        Transmorpher.prototype.setupHeader = function () {
+          var $h1 = $("header h1");
+          var $img = $("header img");
+      
+          this.header = {
+            h1: {
+              top: $h1.position().top,
+              fontSize: parseInt($h1.css("font-size"), 10),
+              $el: $h1,
+            },
+            img: {
+              height: $img.height(),
+              $el: $img,
+            },
+          };
+      
+          this.onScroll();
         };
       
-        $scope.print = function() {
-          window.print();
+        Transmorpher.prototype.setupHeading = function () {
+          var $h1 = $("#heading h1");
+          var $img = $("#heading img");
+      
+          this.heading = {
+            h1: {
+              top: $h1.offset().top,
+              fontSize: parseInt($h1.css("font-size"), 10),
+              $el: $h1,
+            },
+            img: {
+              height: $img.height(),
+              $el: $img,
+            },
+          };
+      
+          this.onScroll();
         };
       
-        $scope.setupHeader = function() {
-          $scope.transmorpher.setupHeader();
-        };
+        Transmorpher.prototype.onScroll = function () {
+          cancelAnimationFrame(this.animationRequest);
       
-        $scope.setupHeading = function() {
-          $scope.transmorpher.setupHeading();
-        };
-      });
-      
-      function Transmorpher() {
-        this.$body = $(document.body);
-        this.onScroll = this.onScroll.bind(this);
-        this.updateDOM = this.updateDOM.bind(this);
-      }
-      
-      Transmorpher.prototype.setupHeader = function() {
-        var $h1 = $('header h1');
-        var $img = $('header img');
-      
-        this.header = {
-          h1: {
-            top: $h1.position().top,
-            fontSize: parseInt($h1.css('font-size'), 10),
-            $el: $h1
-          },
-          img: {
-            height: $img.height(),
-            $el: $img
-          }
-        };
-      
-        this.onScroll();
-      };
-      
-      Transmorpher.prototype.setupHeading = function() {
-        var $h1 = $('#heading h1');
-        var $img = $('#heading img');
-      
-        this.heading = {
-          h1: {
-            top: $h1.offset().top,
-            fontSize: parseInt($h1.css('font-size'), 10),
-            $el: $h1
-          },
-          img: {
-            height: $img.height(),
-            $el: $img
-          }
-        };
-      
-        this.onScroll();
-      };
-      
-      Transmorpher.prototype.onScroll = function() {
-        cancelAnimationFrame(this.animationRequest);
-      
-        if (!this.heading || !this.header) { return; }
-      
-        var scrollTop = document.body.scrollTop;
-        var headingTop = this.heading.h1.top - scrollTop;
-        var headerTop = this.header.h1.top;
-      
-        var headerHidden, headerShowing, headerShown, h1FontSize, imgHeight;
-      
-        if (headingTop >= headerTop) {
-          // heading is below header, we're at the top(ish)
-          headerHidden = true;
-        } else {
-          // heading is above header, display header (and morph if necessary)
-      
-          // calculate transitional h1 font size
-          h1FontSize = this.heading.h1.fontSize - (headerTop - headingTop);
-          // font size is smaller than the final font size, we're done
-          if (h1FontSize < this.header.h1.fontSize) {
-            h1FontSize = void 0;
+          if (!this.heading || !this.header) {
+            return;
           }
       
-          // calculate transitional image height
-          imgHeight = this.heading.img.height - (headerTop - headingTop);
-          // image height is smaller than final image height, we're done
-          if (imgHeight < this.header.img.height) {
-            imgHeight = void 0;
-          }
+          var scrollTop = document.body.scrollTop;
+          var headingTop = this.heading.h1.top - scrollTop;
+          var headerTop = this.header.h1.top;
       
-          if (!imgHeight && !h1FontSize) {
-            // we're at the final sizes, we're done
-            headerShown = true;
+          var headerHidden, headerShowing, headerShown, h1FontSize, imgHeight;
+      
+          if (headingTop >= headerTop) {
+            // heading is below header, we're at the top(ish)
+            headerHidden = true;
           } else {
-            // we're in transition
-            console.log(headingTop, headerTop);
-            headerShowing = true;
+            // heading is above header, display header (and morph if necessary)
+      
+            // calculate transitional h1 font size
+            h1FontSize = this.heading.h1.fontSize - (headerTop - headingTop);
+            // font size is smaller than the final font size, we're done
+            if (h1FontSize < this.header.h1.fontSize) {
+              h1FontSize = void 0;
+            }
+      
+            // calculate transitional image height
+            imgHeight = this.heading.img.height - (headerTop - headingTop);
+            // image height is smaller than final image height, we're done
+            if (imgHeight < this.header.img.height) {
+              imgHeight = void 0;
+            }
+      
+            if (!imgHeight && !h1FontSize) {
+              // we're at the final sizes, we're done
+              headerShown = true;
+            } else {
+              // we're in transition
+              console.log(headingTop, headerTop);
+              headerShowing = true;
+            }
           }
-        }
       
-        // update the DOM all at once
-        this.headerHidden = headerHidden || false;
-        this.headerShowing = headerShowing || false;
-        this.headerShown = headerShown || false;
-        this.h1FontSize = h1FontSize;
-        this.imgHeight = imgHeight;
-        this.animationRequest = requestAnimationFrame(this.updateDOM);
-      };
-      
-      Transmorpher.prototype.updateDOM = function() {
-        this.$body.toggleClass('header-hidden', this.headerHidden);
-        this.$body.toggleClass('header-showing', this.headerShowing);
-        this.$body.toggleClass('header-shown', this.headerShown);
-      
-        var fontSize = (this.h1FontSize ? this.h1FontSize + 'px' : '');
-        this.header.h1.$el.css('font-size', fontSize);
-      
-        var imgHeight = (this.imgHeight ? this.imgHeight + 'px' : '');
-        this.header.img.$el.css('height', imgHeight);
-      };
-      
-      app.directive('headerTransmorpher', function() {
-        return function link(scope, iElement, iAttrs, controller) {
-          var transmorpher = new Transmorpher
-          scope[iAttrs.headerTransmorpher] = transmorpher;
-      
-          var $window = $(window);
-          $window.on('scroll', transmorpher.onScroll);
-          scope.$on('$destroy', function() {
-            $window.off('scroll', transmorpher.onScroll);
-          });
+          // update the DOM all at once
+          this.headerHidden = headerHidden || false;
+          this.headerShowing = headerShowing || false;
+          this.headerShown = headerShown || false;
+          this.h1FontSize = h1FontSize;
+          this.imgHeight = imgHeight;
+          this.animationRequest = requestAnimationFrame(this.updateDOM);
         };
-      });
       
-      app.directive('skillHighlights', function() {
-        function controller($scope, $element) {
-          this.highlight = function(skill) {
-            $element.find('[skill="'+skill+'"]').addClass('highlight');
-          };
+        Transmorpher.prototype.updateDOM = function () {
+          this.$body.toggleClass("header-hidden", this.headerHidden);
+          this.$body.toggleClass("header-showing", this.headerShowing);
+          this.$body.toggleClass("header-shown", this.headerShown);
       
-          this.unhighlight = function(skill) {
-            $element.find('[skill]').removeClass('highlight');
-          };
-        }
+          var fontSize = this.h1FontSize ? this.h1FontSize + "px" : "";
+          this.header.h1.$el.css("font-size", fontSize);
       
-        return {
-          scope: {},
-          controller: controller
+          var imgHeight = this.imgHeight ? this.imgHeight + "px" : "";
+          this.header.img.$el.css("height", imgHeight);
         };
-      });
       
-      app.directive('skill', function() {
-        return {
-          restrict: 'A',
-          require: '^skillHighlights',
-          link: function(scope, element, attrs, skillHighlights) {
-            var skill = attrs.skill;
-            function mouseover() {
-              skillHighlights.highlight(skill);
-            }
+        app.directive("headerTransmorpher", function () {
+          return function link(scope, iElement, iAttrs, controller) {
+            var transmorpher = new Transmorpher();
+            scope[iAttrs.headerTransmorpher] = transmorpher;
       
-            function mouseout() {
-              skillHighlights.unhighlight(skill);
-            }
-      
-            element.on('mouseover', mouseover);
-            element.on('mouseout', mouseout);
-            scope.$on('$destroy', function() {
-              element.off('mouseover', mouseover);
-              element.off('mouseout', mouseout);
+            var $window = $(window);
+            $window.on("scroll", transmorpher.onScroll);
+            scope.$on("$destroy", function () {
+              $window.off("scroll", transmorpher.onScroll);
             });
-          }
-        };
-      });
+          };
+        });
       
-      app.directive('skills', function() {
-        return {
-          scope: { skills: "=" },
-          template: '<span class="skill" skill="{{skill}}" ng-repeat="skill in skills">{{skill}}</span>'
-        };
-      });
+        app.directive("skillHighlights", function () {
+          function controller($scope, $element) {
+            this.highlight = function (skill) {
+              $element.find('[skill="' + skill + '"]').addClass("highlight");
+            };
       
-      app.filter('inGroupsOf', function() {
-        return function(input, count) {
-          if (!angular.isArray(input)) { return input; }
-      
-          // HACK http://stackoverflow.com/questions/20963462/rootscopeinfdig-error-caused-by-filter
-          if (input.groups) { return input.groups; }
-          var groups = input.groups = [];
-      
-          var j = 0;
-          for (var i = 0, l = input.length; i < l; ++i) {
-            if (!groups[j]) { groups[j] = []; }
-            groups[j].push(input[i]);
-            if (groups[j].length >= count) { j++; }
+            this.unhighlight = function (skill) {
+              $element.find("[skill]").removeClass("highlight");
+            };
           }
       
-          return groups;
-        };
-      });
+          return {
+            scope: {},
+            controller: controller,
+          };
+        });
       
-      app.run(function($anchorScroll) {
-        $anchorScroll.yOffset = function() {
-          return $('header').height() + 5;
-        };
-      }).directive('href', function($anchorScroll, $location) {
-        return function link($scope, $element, $attrs) {
-          function scroll() {
-            var href = $attrs.href;
-            if (href[0] !== '#') { return; }
-            $location.hash(href.slice(1));
-            $anchorScroll();
-          }
+        app.directive("skill", function () {
+          return {
+            restrict: "A",
+            require: "^skillHighlights",
+            link: function (scope, element, attrs, skillHighlights) {
+              var skill = attrs.skill;
+              function mouseover() {
+                skillHighlights.highlight(skill);
+              }
       
-          $element.on('click', scroll);
-          $scope.$on('$destroy', function() {
-            $element.off('click', scroll);
+              function mouseout() {
+                skillHighlights.unhighlight(skill);
+              }
+      
+              element.on("mouseover", mouseover);
+              element.on("mouseout", mouseout);
+              scope.$on("$destroy", function () {
+                element.off("mouseover", mouseover);
+                element.off("mouseout", mouseout);
+              });
+            },
+          };
+        });
+      
+        app.directive("skills", function () {
+          return {
+            scope: { skills: "=" },
+            template:
+              '<span class="skill" skill="{{skill}}" ng-repeat="skill in skills">{{skill}}</span>',
+          };
+        });
+      
+        app.filter("inGroupsOf", function () {
+          return function (input, count) {
+            if (!angular.isArray(input)) {
+              return input;
+            }
+      
+            // HACK http://stackoverflow.com/questions/20963462/rootscopeinfdig-error-caused-by-filter
+            if (input.groups) {
+              return input.groups;
+            }
+            var groups = (input.groups = []);
+      
+            var j = 0;
+            for (var i = 0, l = input.length; i < l; ++i) {
+              if (!groups[j]) {
+                groups[j] = [];
+              }
+              groups[j].push(input[i]);
+              if (groups[j].length >= count) {
+                j++;
+              }
+            }
+      
+            return groups;
+          };
+        });
+      
+        app
+          .run(function ($anchorScroll) {
+            $anchorScroll.yOffset = function () {
+              return $("header").height() + 5;
+            };
+          })
+          .directive("href", function ($anchorScroll, $location) {
+            return function link($scope, $element, $attrs) {
+              function scroll() {
+                var href = $attrs.href;
+                if (href[0] !== "#") {
+                  return;
+                }
+                $location.hash(href.slice(1));
+                $anchorScroll();
+              }
+      
+              $element.on("click", scroll);
+              $scope.$on("$destroy", function () {
+                $element.off("click", scroll);
+              });
+            };
           });
-        };
-      });
       
-      function deserialize(json) {
-        var skillCounts = {};
-        var boost = 1, decay = 0.025;
-        function countSkill(skill) {
-          boost *= (1 - decay); // decay older skills
-          if (skill in skillCounts) {
-            skillCounts[skill] += boost;
-          } else {
-            skillCounts[skill] = boost;
+        function deserialize(json) {
+          var skillCounts = {};
+          var boost = 1,
+            decay = 0.15;
+          function countSkill(skill) {
+            boost *= 1 - decay; // decay older skills
+            if (skill in skillCounts) {
+              skillCounts[skill] += boost;
+            } else {
+              skillCounts[skill] = boost;
+            }
           }
-        }
       
-        for (var i = 0, il = json.jobs.length; i < il; ++i) {
-          var job = json.jobs[i];
+          for (var i = 0, il = json.jobs.length; i < il; ++i) {
+            var job = json.jobs[i];
       
-          if (!job.projects) { job.projects = []; }
-          for (var j = 0, jl = job.projects.length; j < jl; ++j) {
-            // convert project names to project objects
-            var projectName = job.projects[j];
-            var project = json.projects[projectName]
-            job.projects[j] = project;
+            if (!job.projects) {
+              job.projects = [];
+            }
+            for (var j = 0, jl = job.projects.length; j < jl; ++j) {
+              // convert project names to project objects
+              var projectName = job.projects[j];
+              var project = json.projects[projectName];
+              job.projects[j] = project;
       
-            // aggregate the project skill counts
-            for (var k = 0, kl = project.skills.length; k < kl; ++k) {
-              var skill = project.skills[k];
+              // aggregate the project skill counts
+              for (var k = 0, kl = project.skills.length; k < kl; ++k) {
+                var skill = project.skills[k];
+                countSkill(skill);
+              }
+            }
+      
+            // aggregate the job skill counts
+            if (!job.skills) {
+              job.skills = [];
+            }
+            for (var j = 0, jl = job.skills.length; j < jl; ++j) {
+              var skill = job.skills[j];
               countSkill(skill);
             }
           }
       
-          // aggregate the job skill counts
-          if (!job.skills) { job.skills = []; }
-          for (var j = 0, jl = job.skills.length; j < jl; ++j) {
-            var skill = job.skills[j];
-            countSkill(skill);
+          // set json.skills to the project skils ordered by descending count
+          var skills = [];
+          for (var skill in skillCounts) {
+            skills.push(skill);
           }
+          json.skills = skills.sort(function (a, b) {
+            return skillCounts[b] - skillCounts[a];
+          });
+      
+          console.log(json.skills);
+          console.log(skillCounts);
+      
+          return json;
         }
-      
-        // set json.skills to the project skils ordered by descending count
-        var skills = [];
-        for (var skill in skillCounts) { skills.push(skill); }
-        json.skills = skills.sort(function(a,b) { return skillCounts[b] - skillCounts[a]; })
-      
-        console.log(json.skills);
-        console.log(skillCounts);
-      
-        return json;
-      }
-      
       })();
-      
-      
-      
     </script>
-    <!-- end js inlined from js/index.js@900d2dc -->
+    <!-- end js inlined from js/index.js@6d8c999 -->
     <!-- begin inline angular resume json cache hack -->
     <script>
       (function() {
